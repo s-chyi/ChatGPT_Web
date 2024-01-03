@@ -1,0 +1,4 @@
+Requests
+gradio
+open-interpreter==0.1.17
+openai==0.28.1

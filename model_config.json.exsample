@@ -1,0 +1,23 @@
+[
+    {
+        "model_name": "GPT4 Turbo",
+        "deployment": "",
+        "endpoint": "",
+        "key": "",
+        "api-version": ""
+    },
+    {
+        "model_name": "GPT4 Vision",
+        "deployment": "",
+        "endpoint": "",
+        "key": "",
+        "api-version": ""
+    },
+    {
+        "model_name": "GPT4 Code Interpreter",
+        "deployment": "",
+        "endpoint": "",
+        "key": "d",
+        "api-version": ""
+    }
+]
