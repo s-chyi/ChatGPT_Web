@@ -19,6 +19,7 @@ GPT WebBot 是一個基於 GPT-4 模型的網頁界面，允許用戶透過瀏�
 - `call_gpt.py` - 定義 `ChatGPT` 類，處理與 GPT-4 模型的通信和回應邏輯。
 - `model_config.json.example` - 模型配置範例文件，用戶須根據自己的配置需求進行修改，並將檔案重新命名為 `model_config.json `。
 - `requirements.txt` - 列舉了進行專案所需的所有 Python 依賴包。
+- 專案中使用的GPT模型都以Azure OpenAI部署。
 
 ## 使用者手冊
 
@@ -47,11 +48,13 @@ pip install -r requirements.txt
 ### 使用說明
 
 - 運行後會再終端機持續運行。
+- 網頁模組以gradio套件建立。
 - GPT4 Turbo模型響應速度較快。
 - GPT4 Vison可以輸入圖片進行分析。
 - GPT4 Code Interpreter可以撰寫代碼並執行，目前以Python與JavaScript成果較佳。
 - Turbo與Vison模型會輸入過往所有歷史紀錄，因此建議定期清空歷史紀錄，避免響應時間過長。
 - Code Interpreter有時會向使用者詢問後停住，只需要上傳他所需要的檔案或是回應"執行"即可。
+- Code Interpreter以open-interpreter套件建立。 https://github.com/KillianLucas/open-interpreter
 
 | Model | Max input tokens | Max output tokens |
 | ------ | :------: | :------: |
